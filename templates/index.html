@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body style="background-color: powderblue">
+    <div>
+      <img
+        src="{{url_for('static', filename='Santander_Bank_Logo.png')}}"
+        alt="Bank Logo"
+        width="500"
+        height="100"
+      />
+      <h1>SANTANDER BANK CUSTOMER SATISFACTION PROJECT</h1>
+    </div>
+
+    <div>
+      <form action="/predict" method="POST">
+        <h3><label for="emp_id">ENTER CUSTOMER ID</label><br /></h3>
+        <textarea name="emp_id" rows="1" cols="10"></textarea>
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <div>
+      <br /><br /><br />
+      <h3>Done by Umesh Raj Baidya</h3>
+    </div>
+  </body>
+</html>
